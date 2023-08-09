@@ -1,7 +1,7 @@
 from tkinter import *
 import time
 import math
-# ---------------------------- CONSTANTS ------------------------------- #
+
 PINK = "#e2979c"
 RED = "#e7305b"
 GREEN = "#9bdeac"
@@ -12,14 +12,7 @@ SHORT_BREAK_MIN = 5
 LONG_BREAK_MIN = 20
 reps= 0
 timer = None
-# ---------------------------- TIMER RESET ------------------------------- #
 
-# ---------------------------- TIMER MECHANISM ------------------------------- #
-
-# ---------------------------- COUNTDOWN MECHANISM
-# ------------------------------- #
-
-# ---------------------------- UI SETUP ------------------------------- #
 def reset_timer():
     window.after_cancel(timer)
     canvas.itemconfig(timer_text, text = "00:00")
